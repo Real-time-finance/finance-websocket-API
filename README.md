@@ -19,7 +19,7 @@ const WebSocket = require('ws');
 const ws = new WebSocket("ws://realtimefinance.io, {
   headers: {
     "api_key": "demo",
-    "symbol" : "AUDUSD", "AAPL", "^DJI"
+    "symbol" : "EURUSD,AAPL,MSFT,MC.PA"
   }
 });
 
