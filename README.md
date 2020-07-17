@@ -31,9 +31,9 @@ ws.on('message', function incoming(msg) {
 });
 ```
 
-# Available stocks and forex
+# Available for stocks and forex
 
-You can find here after JSON stocks list with symbol :
+Here after you can find JSON list with symbols :
 
 - [forex][forex]
 - [companies][companies]
