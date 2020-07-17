@@ -13,12 +13,12 @@ npm install ws
 ```
 
 # Usage example
-
+Use stock symbol to receive datas. In this example we use EURUSD (forex), AAPL (apple - nasdaq), MSFT (microsoft - nasdaq) and MC.PA (lvmh - cac40)
 ```javascript
 const WebSocket = require('ws');
 const ws = new WebSocket("ws://realtimefinance.io, {
   headers: {
-    "api_key": "demo",
+    "API-X-KEY": "demo",
     "symbol" : "EURUSD,AAPL,MSFT,MC.PA"
   }
 });
