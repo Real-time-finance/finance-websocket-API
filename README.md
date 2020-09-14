@@ -20,14 +20,19 @@ Use stock symbol to receive datas. In this example we use EURUSD (forex), AAPL (
 ```javascript
 const WebSocket = require('ws');
 const ws = new WebSocket("wss://api.realtimefinance.io", {
-  headers: {
-    "API-X-KEY": "demo",
-    "symbol" : "EURUSD,AAPL,MSFT,MC.PA"
-  }
+  rejectUnauthorized: false // use only if you are behind a firewall
 });
 
-ws.on('message', function incoming(msg) {
-  console.log(msg);
+const message = {
+  event: "subscribe",
+  data: ['EURUSD','GBPUSD','AAPL','MSFT']
+};
+ws.on("open", function open() {
+  ws.send(JSON.stringify(message));
+});
+
+ws.on("message", function incoming(data) {
+  console.log(data);
 });
 ```
 
