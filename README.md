@@ -4,7 +4,7 @@ Real Time Finance is a simple websocket public API to get real-time stock prices
 The following markets are available at the moment :
 
 - Forex
-- US and European stocks companies (around 10K stocks)
+- US and European stocks companies (around 10K stocks) EURONEXT, NASDAQ, NYSE ...
 
 # Get started
 
