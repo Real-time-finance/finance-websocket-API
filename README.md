@@ -17,11 +17,11 @@ Unix, macos and windows binaries available.
 
 Use market name and stock symbol to receive datas. In this example we get quotations from Netflix (nasdaq) : 
 ```shell
-./rtf add --market="NASDAQ" --stock="NFLX"
+rtf add --market="NASDAQ" --stock="NFLX"
 ```
 Another example to get quotations from Goldman Sachs (nyse) :  
 ```shell
-./rtf add --market="NYSE" --stock="GS"
+rtf add --market="NYSE" --stock="GS"
 ```
 
 ## Output example 
