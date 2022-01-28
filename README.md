@@ -23,7 +23,10 @@ Another example to get quotations from Goldman Sachs (nyse) :
 ```shell
 rtf add --market="NYSE" --stock="GS"
 ```
-
+Forex example to get eur/usd quotation : 
+```
+rtf add --market="FX" --stock="EURUSD"
+```
 ## Output example 
 
 ```
