@@ -10,30 +10,30 @@ The following markets are available at the moment :
 
 ## Installing
 
-```
-npm install ws
-```
+Download rtf binaries : https://github.com/Real-time-finance/finance-websocket-API/releases
+Unix, macos and windows binaries available.
 
 ## Usage example
 
-Use stock symbol to receive datas. In this example we use EURUSD (forex), GBPUSD (forex), AAPL (apple - nasdaq), MSFT (microsoft - nasdaq) and MC.PA (lvmh - cac40)
-```javascript
-const WebSocket = require('ws');
-const ws = new WebSocket("wss://api.realtimefinance.io", {
-  rejectUnauthorized: false // use only if you are behind a firewall
-});
+Use market name and stock symbol to receive datas. In this example we get quotations from Netflix (nasdaq) : 
+```shell
+./rtf add --market="NASDAQ" --stock="NFLX"
+```
+Another example to get quotations from Goldman Sachs (nyse) :  
+```shell
+./rtf add --market="NYSE" --stock="GS"
+```
 
-const message = {
-  event: "subscribe",
-  data: ['EURUSD','GBPUSD','AAPL','MSFT','MC.PA']
-};
-ws.on("open", function open() {
-  ws.send(JSON.stringify(message));
-});
+## Output example 
 
-ws.on("message", function incoming(data) {
-  console.log(data);
-});
+```
+{
+  price: 386.70,
+  volume: 665805,
+  time: 1643359743,
+  symbol: 'NFLX',
+  market: 'NASDAQ'
+}
 ```
 
 # Available for stocks and forex
