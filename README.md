@@ -1,4 +1,4 @@
-# Real Time Finance : a Financial WebSocket public API
+# :chart: Real Time Finance : a Financial WebSocket public API 
 
 Real Time Finance is a simple websocket public API to get real-time stock prices.
 The following markets are available at the moment :
@@ -9,14 +9,14 @@ The following markets are available at the moment :
 ## Preview
 ![Preview](https://raw.githubusercontent.com/Real-time-finance/finance-websocket-API/master/demo0.gif "Preview")
 
-# Get started
+# Get started :rocket:
 
 ## Installing
 
 Download rtf binaries : https://github.com/Real-time-finance/finance-websocket-API/releases
 Unix, macos and windows binaries available.
 
-## Usage example
+## Usage example 
 
 Use market name and stock symbol to receive datas. In this example we get quotations from Netflix (nasdaq) : 
 ```shell
