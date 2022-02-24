@@ -5,6 +5,9 @@ The following markets are available at the moment :
 
 - Forex
 - US and European stocks companies (around 10K stocks) EURONEXT, NASDAQ, NYSE ...
+- 
+## Preview
+![Preview](https://raw.githubusercontent.com/Real-time-finance/finance-websocket-API/master/demo0.gif "Preview")
 
 # Get started
 
